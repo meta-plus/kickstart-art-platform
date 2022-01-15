@@ -117,6 +117,12 @@ export interface ArtistMembersInstance extends Truffle.ContractInstance {
     txDetails?: Truffle.TransactionDetails
   ): Promise<{ id: BN; artistAddress: string; name: string; iconURL: string }>;
 
+  getAllArtists(
+    txDetails?: Truffle.TransactionDetails
+  ): Promise<
+    { id: BN; artistAddress: string; name: string; iconURL: string }[]
+  >;
+
   methods: {
     /**
      * Returns the address of the current owner.
@@ -214,6 +220,12 @@ export interface ArtistMembersInstance extends Truffle.ContractInstance {
       name: string;
       iconURL: string;
     }>;
+
+    getAllArtists(
+      txDetails?: Truffle.TransactionDetails
+    ): Promise<
+      { id: BN; artistAddress: string; name: string; iconURL: string }[]
+    >;
   };
 
   getPastEvents(event: string): Promise<EventData[]>;

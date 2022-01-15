@@ -21103,12 +21103,12 @@
         }
       },
       "links": {},
-      "address": "0x2c39e6D258989BA6E713e0f71F4D465F1477DA5E",
-      "transactionHash": "0xf4fd7249f771ba44f0c0602b4a5bb2d609f34d5ab83e5abba32d26cfbcdb9266"
+      "address": "0xbE6A8d276823E8c985Bda14E63cf3A71B90c75Be",
+      "transactionHash": "0xbf66a1838e32a100dfe4ffe183779345160af051c9401cd756a1260319b05a2b"
     }
   },
-  "schemaVersion": "3.1.0",
-  "updatedAt": "2022-01-15T20:25:30.956Z",
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-15T20:28:14.288Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

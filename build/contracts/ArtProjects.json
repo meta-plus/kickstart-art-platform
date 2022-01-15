@@ -21368,12 +21368,12 @@
         }
       },
       "links": {},
-      "address": "0x7f7Eb6Bf7f4edC04a6dEB321d93439918B0Caf6B",
-      "transactionHash": "0x05d6899335e4d2ffe7a4204c14aa92040e3bf5cc7fb77adb6c3289724f3ffc75"
+      "address": "0x95Cad9aa3A0F7Cec15dFffA25b43Aa9525434241",
+      "transactionHash": "0x2922fb9d8522b0fed1ac25caa5ae41e5ecf14e731672b8edc2b8f9a748c7c1b4"
     }
   },
-  "schemaVersion": "3.1.0",
-  "updatedAt": "2022-01-15T20:25:30.947Z",
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-15T20:28:14.272Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

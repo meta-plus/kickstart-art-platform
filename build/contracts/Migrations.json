@@ -861,8 +861,8 @@
     "version": "0.8.5+commit.a4f2e591.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.1.0",
-  "updatedAt": "2022-01-15T20:25:30.970Z",
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2022-01-15T20:28:14.293Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
