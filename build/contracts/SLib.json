@@ -13,15 +13,15 @@
     "absolutePath": "/home/jacky/project/hackathon/contracts/slib.sol",
     "exportedSymbols": {
       "SLib": [
-        1182
+        1192
       ]
     },
-    "id": 1183,
+    "id": 1193,
     "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1143,
+        "id": 1153,
         "literals": [
           "solidity",
           "^",
@@ -37,9 +37,9 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 1182,
+        "id": 1192,
         "linearizedBaseContracts": [
-          1182
+          1192
         ],
         "name": "SLib",
         "nameLocation": "73:4:4",
@@ -47,16 +47,16 @@
         "nodes": [
           {
             "canonicalName": "SLib.Artist",
-            "id": 1152,
+            "id": 1162,
             "members": [
               {
                 "constant": false,
-                "id": 1145,
+                "id": 1155,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "112:2:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1152,
+                "scope": 1162,
                 "src": "107:7:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -65,7 +65,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1144,
+                  "id": 1154,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "107:4:4",
@@ -78,12 +78,12 @@
               },
               {
                 "constant": false,
-                "id": 1147,
+                "id": 1157,
                 "mutability": "mutable",
                 "name": "artistAddress",
                 "nameLocation": "132:13:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1152,
+                "scope": 1162,
                 "src": "124:21:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -92,7 +92,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 1146,
+                  "id": 1156,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "124:7:4",
@@ -106,12 +106,12 @@
               },
               {
                 "constant": false,
-                "id": 1149,
+                "id": 1159,
                 "mutability": "mutable",
                 "name": "name",
                 "nameLocation": "162:4:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1152,
+                "scope": 1162,
                 "src": "155:11:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -120,7 +120,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1148,
+                  "id": 1158,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "155:6:4",
@@ -133,12 +133,12 @@
               },
               {
                 "constant": false,
-                "id": 1151,
+                "id": 1161,
                 "mutability": "mutable",
                 "name": "iconURL",
                 "nameLocation": "183:7:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1152,
+                "scope": 1162,
                 "src": "176:14:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -147,7 +147,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1150,
+                  "id": 1160,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "176:6:4",
@@ -162,22 +162,22 @@
             "name": "Artist",
             "nameLocation": "91:6:4",
             "nodeType": "StructDefinition",
-            "scope": 1182,
+            "scope": 1192,
             "src": "84:113:4",
             "visibility": "public"
           },
           {
             "canonicalName": "SLib.Project",
-            "id": 1171,
+            "id": 1181,
             "members": [
               {
                 "constant": false,
-                "id": 1154,
+                "id": 1164,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "234:2:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "229:7:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -186,7 +186,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1153,
+                  "id": 1163,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "229:4:4",
@@ -199,12 +199,12 @@
               },
               {
                 "constant": false,
-                "id": 1156,
+                "id": 1166,
                 "mutability": "mutable",
                 "name": "artistAddress",
                 "nameLocation": "254:13:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "246:21:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -213,7 +213,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 1155,
+                  "id": 1165,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "246:7:4",
@@ -227,12 +227,12 @@
               },
               {
                 "constant": false,
-                "id": 1158,
+                "id": 1168,
                 "mutability": "mutable",
                 "name": "name",
                 "nameLocation": "284:4:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "277:11:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -241,7 +241,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1157,
+                  "id": 1167,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "277:6:4",
@@ -254,12 +254,12 @@
               },
               {
                 "constant": false,
-                "id": 1160,
+                "id": 1170,
                 "mutability": "mutable",
                 "name": "description",
                 "nameLocation": "305:11:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "298:18:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -268,7 +268,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1159,
+                  "id": 1169,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "298:6:4",
@@ -281,12 +281,12 @@
               },
               {
                 "constant": false,
-                "id": 1162,
+                "id": 1172,
                 "mutability": "mutable",
                 "name": "targetFundingAmount",
                 "nameLocation": "331:19:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "326:24:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -295,7 +295,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1161,
+                  "id": 1171,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "326:4:4",
@@ -308,12 +308,12 @@
               },
               {
                 "constant": false,
-                "id": 1164,
+                "id": 1174,
                 "mutability": "mutable",
                 "name": "currentFundingAmount",
                 "nameLocation": "365:20:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "360:25:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -322,7 +322,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1163,
+                  "id": 1173,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "360:4:4",
@@ -335,12 +335,12 @@
               },
               {
                 "constant": false,
-                "id": 1166,
+                "id": 1176,
                 "mutability": "mutable",
                 "name": "totalFunder",
                 "nameLocation": "400:11:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "395:16:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -349,7 +349,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1165,
+                  "id": 1175,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "395:4:4",
@@ -362,12 +362,12 @@
               },
               {
                 "constant": false,
-                "id": 1168,
+                "id": 1178,
                 "mutability": "mutable",
                 "name": "isOpen",
                 "nameLocation": "426:6:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "421:11:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -376,7 +376,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 1167,
+                  "id": 1177,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "421:4:4",
@@ -389,12 +389,12 @@
               },
               {
                 "constant": false,
-                "id": 1170,
+                "id": 1180,
                 "mutability": "mutable",
                 "name": "dataURL",
                 "nameLocation": "449:7:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "442:14:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -403,7 +403,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1169,
+                  "id": 1179,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "442:6:4",
@@ -418,22 +418,22 @@
             "name": "Project",
             "nameLocation": "212:7:4",
             "nodeType": "StructDefinition",
-            "scope": 1182,
+            "scope": 1192,
             "src": "205:258:4",
             "visibility": "public"
           },
           {
             "canonicalName": "SLib.ProjectShare",
-            "id": 1176,
+            "id": 1186,
             "members": [
               {
                 "constant": false,
-                "id": 1173,
+                "id": 1183,
                 "mutability": "mutable",
                 "name": "projectId",
                 "nameLocation": "504:9:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1176,
+                "scope": 1186,
                 "src": "499:14:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -442,7 +442,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1172,
+                  "id": 1182,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "499:4:4",
@@ -455,12 +455,12 @@
               },
               {
                 "constant": false,
-                "id": 1175,
+                "id": 1185,
                 "mutability": "mutable",
                 "name": "share",
                 "nameLocation": "528:5:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1176,
+                "scope": 1186,
                 "src": "523:10:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -469,7 +469,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1174,
+                  "id": 1184,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "523:4:4",
@@ -484,22 +484,22 @@
             "name": "ProjectShare",
             "nameLocation": "476:12:4",
             "nodeType": "StructDefinition",
-            "scope": 1182,
+            "scope": 1192,
             "src": "469:71:4",
             "visibility": "public"
           },
           {
             "canonicalName": "SLib.ProjectAddressFund",
-            "id": 1181,
+            "id": 1191,
             "members": [
               {
                 "constant": false,
-                "id": 1178,
+                "id": 1188,
                 "mutability": "mutable",
                 "name": "funderAddress",
                 "nameLocation": "590:13:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1181,
+                "scope": 1191,
                 "src": "582:21:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -508,7 +508,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 1177,
+                  "id": 1187,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "582:7:4",
@@ -522,12 +522,12 @@
               },
               {
                 "constant": false,
-                "id": 1180,
+                "id": 1190,
                 "mutability": "mutable",
                 "name": "amount",
                 "nameLocation": "618:6:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1181,
+                "scope": 1191,
                 "src": "613:11:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -536,7 +536,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1179,
+                  "id": 1189,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "613:4:4",
@@ -551,12 +551,12 @@
             "name": "ProjectAddressFund",
             "nameLocation": "553:18:4",
             "nodeType": "StructDefinition",
-            "scope": 1182,
+            "scope": 1192,
             "src": "546:85:4",
             "visibility": "public"
           }
         ],
-        "scope": 1183,
+        "scope": 1193,
         "src": "65:568:4",
         "usedErrors": []
       }
@@ -567,15 +567,15 @@
     "absolutePath": "/home/jacky/project/hackathon/contracts/slib.sol",
     "exportedSymbols": {
       "SLib": [
-        1182
+        1192
       ]
     },
-    "id": 1183,
+    "id": 1193,
     "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1143,
+        "id": 1153,
         "literals": [
           "solidity",
           "^",
@@ -591,9 +591,9 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 1182,
+        "id": 1192,
         "linearizedBaseContracts": [
-          1182
+          1192
         ],
         "name": "SLib",
         "nameLocation": "73:4:4",
@@ -601,16 +601,16 @@
         "nodes": [
           {
             "canonicalName": "SLib.Artist",
-            "id": 1152,
+            "id": 1162,
             "members": [
               {
                 "constant": false,
-                "id": 1145,
+                "id": 1155,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "112:2:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1152,
+                "scope": 1162,
                 "src": "107:7:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -619,7 +619,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1144,
+                  "id": 1154,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "107:4:4",
@@ -632,12 +632,12 @@
               },
               {
                 "constant": false,
-                "id": 1147,
+                "id": 1157,
                 "mutability": "mutable",
                 "name": "artistAddress",
                 "nameLocation": "132:13:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1152,
+                "scope": 1162,
                 "src": "124:21:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -646,7 +646,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 1146,
+                  "id": 1156,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "124:7:4",
@@ -660,12 +660,12 @@
               },
               {
                 "constant": false,
-                "id": 1149,
+                "id": 1159,
                 "mutability": "mutable",
                 "name": "name",
                 "nameLocation": "162:4:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1152,
+                "scope": 1162,
                 "src": "155:11:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -674,7 +674,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1148,
+                  "id": 1158,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "155:6:4",
@@ -687,12 +687,12 @@
               },
               {
                 "constant": false,
-                "id": 1151,
+                "id": 1161,
                 "mutability": "mutable",
                 "name": "iconURL",
                 "nameLocation": "183:7:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1152,
+                "scope": 1162,
                 "src": "176:14:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -701,7 +701,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1150,
+                  "id": 1160,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "176:6:4",
@@ -716,22 +716,22 @@
             "name": "Artist",
             "nameLocation": "91:6:4",
             "nodeType": "StructDefinition",
-            "scope": 1182,
+            "scope": 1192,
             "src": "84:113:4",
             "visibility": "public"
           },
           {
             "canonicalName": "SLib.Project",
-            "id": 1171,
+            "id": 1181,
             "members": [
               {
                 "constant": false,
-                "id": 1154,
+                "id": 1164,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "234:2:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "229:7:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -740,7 +740,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1153,
+                  "id": 1163,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "229:4:4",
@@ -753,12 +753,12 @@
               },
               {
                 "constant": false,
-                "id": 1156,
+                "id": 1166,
                 "mutability": "mutable",
                 "name": "artistAddress",
                 "nameLocation": "254:13:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "246:21:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -767,7 +767,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 1155,
+                  "id": 1165,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "246:7:4",
@@ -781,12 +781,12 @@
               },
               {
                 "constant": false,
-                "id": 1158,
+                "id": 1168,
                 "mutability": "mutable",
                 "name": "name",
                 "nameLocation": "284:4:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "277:11:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -795,7 +795,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1157,
+                  "id": 1167,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "277:6:4",
@@ -808,12 +808,12 @@
               },
               {
                 "constant": false,
-                "id": 1160,
+                "id": 1170,
                 "mutability": "mutable",
                 "name": "description",
                 "nameLocation": "305:11:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "298:18:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -822,7 +822,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1159,
+                  "id": 1169,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "298:6:4",
@@ -835,12 +835,12 @@
               },
               {
                 "constant": false,
-                "id": 1162,
+                "id": 1172,
                 "mutability": "mutable",
                 "name": "targetFundingAmount",
                 "nameLocation": "331:19:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "326:24:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -849,7 +849,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1161,
+                  "id": 1171,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "326:4:4",
@@ -862,12 +862,12 @@
               },
               {
                 "constant": false,
-                "id": 1164,
+                "id": 1174,
                 "mutability": "mutable",
                 "name": "currentFundingAmount",
                 "nameLocation": "365:20:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "360:25:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -876,7 +876,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1163,
+                  "id": 1173,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "360:4:4",
@@ -889,12 +889,12 @@
               },
               {
                 "constant": false,
-                "id": 1166,
+                "id": 1176,
                 "mutability": "mutable",
                 "name": "totalFunder",
                 "nameLocation": "400:11:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "395:16:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -903,7 +903,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1165,
+                  "id": 1175,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "395:4:4",
@@ -916,12 +916,12 @@
               },
               {
                 "constant": false,
-                "id": 1168,
+                "id": 1178,
                 "mutability": "mutable",
                 "name": "isOpen",
                 "nameLocation": "426:6:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "421:11:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -930,7 +930,7 @@
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 1167,
+                  "id": 1177,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "421:4:4",
@@ -943,12 +943,12 @@
               },
               {
                 "constant": false,
-                "id": 1170,
+                "id": 1180,
                 "mutability": "mutable",
                 "name": "dataURL",
                 "nameLocation": "449:7:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1171,
+                "scope": 1181,
                 "src": "442:14:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -957,7 +957,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 1169,
+                  "id": 1179,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "442:6:4",
@@ -972,22 +972,22 @@
             "name": "Project",
             "nameLocation": "212:7:4",
             "nodeType": "StructDefinition",
-            "scope": 1182,
+            "scope": 1192,
             "src": "205:258:4",
             "visibility": "public"
           },
           {
             "canonicalName": "SLib.ProjectShare",
-            "id": 1176,
+            "id": 1186,
             "members": [
               {
                 "constant": false,
-                "id": 1173,
+                "id": 1183,
                 "mutability": "mutable",
                 "name": "projectId",
                 "nameLocation": "504:9:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1176,
+                "scope": 1186,
                 "src": "499:14:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -996,7 +996,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1172,
+                  "id": 1182,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "499:4:4",
@@ -1009,12 +1009,12 @@
               },
               {
                 "constant": false,
-                "id": 1175,
+                "id": 1185,
                 "mutability": "mutable",
                 "name": "share",
                 "nameLocation": "528:5:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1176,
+                "scope": 1186,
                 "src": "523:10:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1023,7 +1023,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1174,
+                  "id": 1184,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "523:4:4",
@@ -1038,22 +1038,22 @@
             "name": "ProjectShare",
             "nameLocation": "476:12:4",
             "nodeType": "StructDefinition",
-            "scope": 1182,
+            "scope": 1192,
             "src": "469:71:4",
             "visibility": "public"
           },
           {
             "canonicalName": "SLib.ProjectAddressFund",
-            "id": 1181,
+            "id": 1191,
             "members": [
               {
                 "constant": false,
-                "id": 1178,
+                "id": 1188,
                 "mutability": "mutable",
                 "name": "funderAddress",
                 "nameLocation": "590:13:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1181,
+                "scope": 1191,
                 "src": "582:21:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1062,7 +1062,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 1177,
+                  "id": 1187,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "582:7:4",
@@ -1076,12 +1076,12 @@
               },
               {
                 "constant": false,
-                "id": 1180,
+                "id": 1190,
                 "mutability": "mutable",
                 "name": "amount",
                 "nameLocation": "618:6:4",
                 "nodeType": "VariableDeclaration",
-                "scope": 1181,
+                "scope": 1191,
                 "src": "613:11:4",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1090,7 +1090,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 1179,
+                  "id": 1189,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "613:4:4",
@@ -1105,12 +1105,12 @@
             "name": "ProjectAddressFund",
             "nameLocation": "553:18:4",
             "nodeType": "StructDefinition",
-            "scope": 1182,
+            "scope": 1192,
             "src": "546:85:4",
             "visibility": "public"
           }
         ],
-        "scope": 1183,
+        "scope": 1193,
         "src": "65:568:4",
         "usedErrors": []
       }
@@ -1123,7 +1123,7 @@
   },
   "networks": {},
   "schemaVersion": "3.1.0",
-  "updatedAt": "2022-01-15T19:06:47.133Z",
+  "updatedAt": "2022-01-15T20:25:27.721Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

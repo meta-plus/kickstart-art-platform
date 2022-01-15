@@ -64,6 +64,10 @@ contract ArtistMembers is Ownable{
         uint artistIndex = artistIdIndex[_address];
         return artistList[artistIndex];
     }
+
+    function getAllArtists ()public view returns (SLib.Artist [] memory){
+        return artistList;
+    }
 }
 
 
