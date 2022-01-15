@@ -1,0 +1,1137 @@
+{
+  "contractName": "SLib",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.5+commit.a4f2e591\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/jacky/project/hackathon/contracts/slib.sol\":\"SLib\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jacky/project/hackathon/contracts/slib.sol\":{\"keccak256\":\"0x826ec1742a49d7e6815f65ab3c23925b9ee72f115b7ababeba4ea76dd0dd857b\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7ac31ef1474d60263a56b6224a48a9ec3f6f179066bc99da34b4a7b48c54d578\",\"dweb:/ipfs/QmcAfuEH4hgna4cwZoBABKrnwXwxXFLyjaW2HU6PDX1sL4\"]}},\"version\":1}",
+  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122071376fb5fc4cb9a50be9082bc6ad9a90ec04ff63087f2208286f9db23a26cebb64736f6c63430008050033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122071376fb5fc4cb9a50be9082bc6ad9a90ec04ff63087f2208286f9db23a26cebb64736f6c63430008050033",
+  "immutableReferences": {},
+  "sourceMap": "65:568:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "65:568:4:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: UNLICENSED\n\npragma solidity ^0.8.5;\n\nlibrary SLib {\n    struct Artist{\n        uint id;\n        address artistAddress;\n        string name;\n        string iconURL;\n    }  \n\n    struct Project{\n        uint id;\n        address artistAddress;\n        string name;\n        string description;\n        uint targetFundingAmount;\n        uint currentFundingAmount;\n        uint totalFunder;\n        bool isOpen;\n        string dataURL;\n    }\n\n    struct ProjectShare {\n        uint projectId;\n        uint share;\n    }\n\n    struct ProjectAddressFund {\n        address funderAddress;\n        uint amount;\n    }\n}",
+  "sourcePath": "/home/jacky/project/hackathon/contracts/slib.sol",
+  "ast": {
+    "absolutePath": "/home/jacky/project/hackathon/contracts/slib.sol",
+    "exportedSymbols": {
+      "SLib": [
+        1182
+      ]
+    },
+    "id": 1183,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1143,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 1182,
+        "linearizedBaseContracts": [
+          1182
+        ],
+        "name": "SLib",
+        "nameLocation": "73:4:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "SLib.Artist",
+            "id": 1152,
+            "members": [
+              {
+                "constant": false,
+                "id": 1145,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "112:2:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1152,
+                "src": "107:7:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1144,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "107:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1147,
+                "mutability": "mutable",
+                "name": "artistAddress",
+                "nameLocation": "132:13:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1152,
+                "src": "124:21:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1146,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "124:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1149,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "162:4:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1152,
+                "src": "155:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1148,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "155:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1151,
+                "mutability": "mutable",
+                "name": "iconURL",
+                "nameLocation": "183:7:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1152,
+                "src": "176:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1150,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "176:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Artist",
+            "nameLocation": "91:6:4",
+            "nodeType": "StructDefinition",
+            "scope": 1182,
+            "src": "84:113:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "SLib.Project",
+            "id": 1171,
+            "members": [
+              {
+                "constant": false,
+                "id": 1154,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "234:2:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "229:7:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1153,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "229:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1156,
+                "mutability": "mutable",
+                "name": "artistAddress",
+                "nameLocation": "254:13:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "246:21:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1155,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "246:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1158,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "284:4:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "277:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1157,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "277:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1160,
+                "mutability": "mutable",
+                "name": "description",
+                "nameLocation": "305:11:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "298:18:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1159,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "298:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1162,
+                "mutability": "mutable",
+                "name": "targetFundingAmount",
+                "nameLocation": "331:19:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "326:24:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1161,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "326:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1164,
+                "mutability": "mutable",
+                "name": "currentFundingAmount",
+                "nameLocation": "365:20:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "360:25:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1163,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "360:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1166,
+                "mutability": "mutable",
+                "name": "totalFunder",
+                "nameLocation": "400:11:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "395:16:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1165,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "395:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1168,
+                "mutability": "mutable",
+                "name": "isOpen",
+                "nameLocation": "426:6:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "421:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 1167,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "421:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1170,
+                "mutability": "mutable",
+                "name": "dataURL",
+                "nameLocation": "449:7:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "442:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1169,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "442:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Project",
+            "nameLocation": "212:7:4",
+            "nodeType": "StructDefinition",
+            "scope": 1182,
+            "src": "205:258:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "SLib.ProjectShare",
+            "id": 1176,
+            "members": [
+              {
+                "constant": false,
+                "id": 1173,
+                "mutability": "mutable",
+                "name": "projectId",
+                "nameLocation": "504:9:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1176,
+                "src": "499:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1172,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "499:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1175,
+                "mutability": "mutable",
+                "name": "share",
+                "nameLocation": "528:5:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1176,
+                "src": "523:10:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1174,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "523:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ProjectShare",
+            "nameLocation": "476:12:4",
+            "nodeType": "StructDefinition",
+            "scope": 1182,
+            "src": "469:71:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "SLib.ProjectAddressFund",
+            "id": 1181,
+            "members": [
+              {
+                "constant": false,
+                "id": 1178,
+                "mutability": "mutable",
+                "name": "funderAddress",
+                "nameLocation": "590:13:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1181,
+                "src": "582:21:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1177,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "582:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1180,
+                "mutability": "mutable",
+                "name": "amount",
+                "nameLocation": "618:6:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1181,
+                "src": "613:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1179,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "613:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ProjectAddressFund",
+            "nameLocation": "553:18:4",
+            "nodeType": "StructDefinition",
+            "scope": 1182,
+            "src": "546:85:4",
+            "visibility": "public"
+          }
+        ],
+        "scope": 1183,
+        "src": "65:568:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "40:593:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/jacky/project/hackathon/contracts/slib.sol",
+    "exportedSymbols": {
+      "SLib": [
+        1182
+      ]
+    },
+    "id": 1183,
+    "license": "UNLICENSED",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1143,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "40:23:4"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 1182,
+        "linearizedBaseContracts": [
+          1182
+        ],
+        "name": "SLib",
+        "nameLocation": "73:4:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "SLib.Artist",
+            "id": 1152,
+            "members": [
+              {
+                "constant": false,
+                "id": 1145,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "112:2:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1152,
+                "src": "107:7:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1144,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "107:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1147,
+                "mutability": "mutable",
+                "name": "artistAddress",
+                "nameLocation": "132:13:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1152,
+                "src": "124:21:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1146,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "124:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1149,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "162:4:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1152,
+                "src": "155:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1148,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "155:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1151,
+                "mutability": "mutable",
+                "name": "iconURL",
+                "nameLocation": "183:7:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1152,
+                "src": "176:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1150,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "176:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Artist",
+            "nameLocation": "91:6:4",
+            "nodeType": "StructDefinition",
+            "scope": 1182,
+            "src": "84:113:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "SLib.Project",
+            "id": 1171,
+            "members": [
+              {
+                "constant": false,
+                "id": 1154,
+                "mutability": "mutable",
+                "name": "id",
+                "nameLocation": "234:2:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "229:7:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1153,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "229:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1156,
+                "mutability": "mutable",
+                "name": "artistAddress",
+                "nameLocation": "254:13:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "246:21:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1155,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "246:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1158,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "284:4:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "277:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1157,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "277:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1160,
+                "mutability": "mutable",
+                "name": "description",
+                "nameLocation": "305:11:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "298:18:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1159,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "298:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1162,
+                "mutability": "mutable",
+                "name": "targetFundingAmount",
+                "nameLocation": "331:19:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "326:24:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1161,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "326:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1164,
+                "mutability": "mutable",
+                "name": "currentFundingAmount",
+                "nameLocation": "365:20:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "360:25:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1163,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "360:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1166,
+                "mutability": "mutable",
+                "name": "totalFunder",
+                "nameLocation": "400:11:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "395:16:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1165,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "395:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1168,
+                "mutability": "mutable",
+                "name": "isOpen",
+                "nameLocation": "426:6:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "421:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 1167,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "421:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1170,
+                "mutability": "mutable",
+                "name": "dataURL",
+                "nameLocation": "449:7:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1171,
+                "src": "442:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1169,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "442:6:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "Project",
+            "nameLocation": "212:7:4",
+            "nodeType": "StructDefinition",
+            "scope": 1182,
+            "src": "205:258:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "SLib.ProjectShare",
+            "id": 1176,
+            "members": [
+              {
+                "constant": false,
+                "id": 1173,
+                "mutability": "mutable",
+                "name": "projectId",
+                "nameLocation": "504:9:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1176,
+                "src": "499:14:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1172,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "499:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1175,
+                "mutability": "mutable",
+                "name": "share",
+                "nameLocation": "528:5:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1176,
+                "src": "523:10:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1174,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "523:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ProjectShare",
+            "nameLocation": "476:12:4",
+            "nodeType": "StructDefinition",
+            "scope": 1182,
+            "src": "469:71:4",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "SLib.ProjectAddressFund",
+            "id": 1181,
+            "members": [
+              {
+                "constant": false,
+                "id": 1178,
+                "mutability": "mutable",
+                "name": "funderAddress",
+                "nameLocation": "590:13:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1181,
+                "src": "582:21:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1177,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "582:7:4",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1180,
+                "mutability": "mutable",
+                "name": "amount",
+                "nameLocation": "618:6:4",
+                "nodeType": "VariableDeclaration",
+                "scope": 1181,
+                "src": "613:11:4",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1179,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "613:4:4",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "ProjectAddressFund",
+            "nameLocation": "553:18:4",
+            "nodeType": "StructDefinition",
+            "scope": 1182,
+            "src": "546:85:4",
+            "visibility": "public"
+          }
+        ],
+        "scope": 1183,
+        "src": "65:568:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "40:593:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.5+commit.a4f2e591.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2022-01-15T19:06:47.133Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

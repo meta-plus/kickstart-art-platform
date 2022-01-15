@@ -1,0 +1,24 @@
+{
+  "name": "truffle-v5-typechain-template",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "generate-types": "typechain --target=truffle-v5 'build/contracts/*.json'",
+    "postinstall": "truffle compile && yarn generate-types",
+    "migrate": "tsc -p ./tsconfig.migrate.json --outDir ./migrations && truffle migrate --reset --compile-all",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2",
+    "@typechain/truffle-v5": "^2.0.0",
+    "@types/bn.js": "^4.11.6",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/web3": "^1.2.2",
+    "node-rsa": "^1.1.1",
+    "truffle": "^5.1.22",
+    "typechain": "2.0.0",
+    "typescript": "4.1.5"
+  }
+}
