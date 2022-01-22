@@ -3,7 +3,6 @@
 
 import { ArtistMembersContract } from "./ArtistMembers";
 import { ArtProjectsContract } from "./ArtProjects";
-import { ElectionV2Contract } from "./ElectionV2";
 import { Erc165Contract } from "./Erc165";
 import { Erc20Contract } from "./Erc20";
 import { Erc721Contract } from "./Erc721";
@@ -24,7 +23,6 @@ declare global {
     interface Artifacts {
       require(name: "ArtistMembers"): ArtistMembersContract;
       require(name: "ArtProjects"): ArtProjectsContract;
-      require(name: "ElectionV2"): ElectionV2Contract;
       require(name: "ERC165"): Erc165Contract;
       require(name: "ERC20"): Erc20Contract;
       require(name: "ERC721"): Erc721Contract;
@@ -45,7 +43,6 @@ declare global {
 
 export { ArtistMembersContract, ArtistMembersInstance } from "./ArtistMembers";
 export { ArtProjectsContract, ArtProjectsInstance } from "./ArtProjects";
-export { ElectionV2Contract, ElectionV2Instance } from "./ElectionV2";
 export { Erc165Contract, Erc165Instance } from "./Erc165";
 export { Erc20Contract, Erc20Instance } from "./Erc20";
 export { Erc721Contract, Erc721Instance } from "./Erc721";

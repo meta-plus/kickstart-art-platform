@@ -278,6 +278,29 @@ export interface PlatformTokenInstance extends Truffle.ContractInstance {
     ): Promise<number>;
   };
 
+  addAllowance: {
+    (
+      spender: string,
+      addedValue: number | BN | string,
+      txDetails?: Truffle.TransactionDetails
+    ): Promise<Truffle.TransactionResponse<AllEvents>>;
+    call(
+      spender: string,
+      addedValue: number | BN | string,
+      txDetails?: Truffle.TransactionDetails
+    ): Promise<void>;
+    sendTransaction(
+      spender: string,
+      addedValue: number | BN | string,
+      txDetails?: Truffle.TransactionDetails
+    ): Promise<string>;
+    estimateGas(
+      spender: string,
+      addedValue: number | BN | string,
+      txDetails?: Truffle.TransactionDetails
+    ): Promise<number>;
+  };
+
   methods: {
     /**
      * See {IERC20-allowance}.
@@ -507,6 +530,29 @@ export interface PlatformTokenInstance extends Truffle.ContractInstance {
       estimateGas(
         to: string,
         amount: number | BN | string,
+        txDetails?: Truffle.TransactionDetails
+      ): Promise<number>;
+    };
+
+    addAllowance: {
+      (
+        spender: string,
+        addedValue: number | BN | string,
+        txDetails?: Truffle.TransactionDetails
+      ): Promise<Truffle.TransactionResponse<AllEvents>>;
+      call(
+        spender: string,
+        addedValue: number | BN | string,
+        txDetails?: Truffle.TransactionDetails
+      ): Promise<void>;
+      sendTransaction(
+        spender: string,
+        addedValue: number | BN | string,
+        txDetails?: Truffle.TransactionDetails
+      ): Promise<string>;
+      estimateGas(
+        spender: string,
+        addedValue: number | BN | string,
         txDetails?: Truffle.TransactionDetails
       ): Promise<number>;
     };
